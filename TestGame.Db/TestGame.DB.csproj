@@ -54,8 +54,10 @@
     <Compile Include="Entity\Animation.cs" />
     <Compile Include="Entity\AnimationFrame.cs" />
     <Compile Include="Entity\GameObject2D.cs" />
+    <Compile Include="Entity\GameObjectByScena.cs" />
     <Compile Include="Entity\GameObjectType.cs" />
     <Compile Include="Entity\Point.cs" />
+    <Compile Include="Entity\Scena.cs" />
     <Compile Include="Entity\Size.cs" />
     <Compile Include="Entity\Texture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

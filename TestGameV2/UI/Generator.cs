@@ -11,9 +11,9 @@ namespace TestGameV2.UI
         {
             GameDataBase = gameDataBase;
         }
-        public void LoadContent(ScenaManager manager)
+        public void LoadContent(ScenaManager manager, string scenaName)
         {
-            
+            var scena = GameDataBase.GetScenaByName(scenaName);
         }
     }
 }

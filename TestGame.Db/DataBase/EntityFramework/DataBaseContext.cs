@@ -13,6 +13,7 @@ namespace TestGame.Db.DataBase.EntityFramework
         public DbSet<Animation> Animations { get; set; }
         public DbSet<Texture2D> Textures { get; set; }
         public DbSet<GameObject2D> GameObjects { get; set; }
+        public DbSet<Scena> Scenas { get; set; }
 
     }
 }
