@@ -50,6 +50,7 @@
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +61,14 @@
     <None Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TestGame.Client\TestGame.Client.csproj">
+      <Project>{BF1441CC-EDA5-4E44-A88E-13F0DD40D2F8}</Project>
+      <Name>TestGame.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestGame.Db\TestGame.DB.csproj">
+      <Project>{FE3788FA-40B1-4319-85BD-061ABEC3E5AB}</Project>
+      <Name>TestGame.DB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestGameV2\TestGame.Core.csproj">
       <Project>{80f34571-473f-43c0-8301-9dfdf6df774d}</Project>
       <Name>TestGame.Core</Name>

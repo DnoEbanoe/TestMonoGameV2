@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,8 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Generator.cs" />
+    <Compile Include="Entity\UI\AnimationFrameUi.cs" />
+    <Compile Include="Entity\UI\AnimationUi.cs" />
+    <Compile Include="Entity\UI\GameObjectUI.cs" />
+    <Compile Include="Entity\UI\Texture2dUi.cs" />
+    <Compile Include="GameService.cs" />
+    <Compile Include="UI\Generator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ScenaManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestGame.Client\TestGame.Client.csproj">
@@ -53,6 +60,9 @@
       <Project>{fe3788fa-40b1-4319-85bd-061abec3e5ab}</Project>
       <Name>TestGame.DB</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\Server\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
