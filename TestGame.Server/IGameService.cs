@@ -7,8 +7,7 @@ using System.Text;
 
 namespace TestGame.Server
 {
-    // ПРИМЕЧАНИЕ. Команду "Переименовать" в меню "Рефакторинг" можно использовать для одновременного изменения имени интерфейса "IGameService" в коде и файле конфигурации.
-    [ServiceContract]
+    [ServiceContract(CallbackContract = typeof(IGameServiceCallback), SessionMode = SessionMode.Required)]
     public interface IGameService
     {
         [OperationContract]

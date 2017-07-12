@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestGameV2.Entity.UI
+namespace TestGame.Server
 {
-    public class AnimationUi
+    public interface IGameServiceCallback
     {
-        public List<AnimationFrameUi> Frame { get; set; }
-        
+        void ClientConnect();
     }
 }

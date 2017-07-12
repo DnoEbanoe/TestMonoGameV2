@@ -29,7 +29,7 @@ namespace TestGame.UI.Windows
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Generator.LoadContent(Manager);
+            Generator.LoadContent(Manager, "Test");
         }
 
         protected override void Update(GameTime gameTime)

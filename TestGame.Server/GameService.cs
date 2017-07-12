@@ -7,9 +7,10 @@ using System.Text;
 
 namespace TestGame.Server
 {
-    // ПРИМЕЧАНИЕ. Команду "Переименовать" в меню "Рефакторинг" можно использовать для одновременного изменения имени класса "GameService" в коде и файле конфигурации.
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     public class GameService : IGameService
     {
+        private static List<IGameServiceCallback> _callbackList = new List<IGameServiceCallback>();
         public void CreateGameObject()
         {
             Console.WriteLine("Game obj created");

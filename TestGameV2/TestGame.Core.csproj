@@ -56,9 +56,13 @@
       <Project>{bf1441cc-eda5-4e44-a88e-13f0dd40d2f8}</Project>
       <Name>TestGame.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestGame.Db\TestGame.DB.csproj">
+    <ProjectReference Include="..\TestGame.Db\TestGame.Server.DB.csproj">
       <Project>{fe3788fa-40b1-4319-85bd-061abec3e5ab}</Project>
-      <Name>TestGame.DB</Name>
+      <Name>TestGame.Server.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestGame.Server\TestGame.Server.Wcf.csproj">
+      <Project>{CB200ADA-2D22-4534-8813-3E86B0C2A9E3}</Project>
+      <Name>TestGame.Server.Wcf</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
